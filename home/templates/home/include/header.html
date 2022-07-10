@@ -1,0 +1,68 @@
+{% load static %}
+<!-- BEGIN | Header -->
+<header class="ht-header">
+	<div class="container">
+		<nav class="navbar navbar-default navbar-custom">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header logo">
+				    <div class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					    <span class="sr-only">Toggle navigation</span>
+					    <div id="nav-icon1">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+				    </div>
+				    <a href="{% url 'index' %}"><img class="logo" src="{% static 'images/logo1.png' %}" alt="" width="119" height="58"></a>
+			    </div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse flex-parent" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav flex-child-menu menu-left">
+						<li class="hidden">
+							<a href="#page-top"></a>
+						</li>
+						<li class="dropdown first">
+							<a href="{% url 'index' %}" >
+							Домой 
+							</a>
+							 
+						</li>
+						<li class="dropdown first">
+							<a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
+							Жанры
+							</a>
+						</li>
+						<li class="dropdown first">
+							<a href="{% url 'about' %}">
+							О нас 
+							</a>
+						</li>
+						<li><a href="#">Связаться с нами</a></li>
+					</ul> 
+					<ul class="nav navbar-nav flex-child-menu menu-right">  
+						<li><a href="{% url 'user_login' %}">Логин</a></li>
+						<li><a href="{% url 'register' %}">Зарегистрироваться</a></li>
+					</ul>
+				</div>
+			<!-- /.navbar-collapse -->
+	    </nav>
+	    
+	    <!-- top search form -->
+	    <!-- <div class="top-search">
+	    	<select>
+				<option value="united">TV show</option>
+				<option value="saab">Others</option>
+			</select>
+			<input type="text" name="key" placeholder=" Введите названия фильма">
+	    </div> -->
+		<form action="{% url 'movie_search' %}" method="GET">
+			<div class="bg-light rounded rounded-pill shadow-sm">
+				<div class="top-search">
+					<!-- <input type="search" name="query" placeholder="Поиск..." aria-describedby="button-addon1" class="form-control border-0 bg-light"> -->
+					<input type="search" name="key" placeholder=" Введите названия фильма">
+				</div>
+			</div>
+		</form>
+	</div>
+</header>
+<!-- END | Header -->

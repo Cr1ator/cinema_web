@@ -2,9 +2,11 @@ from django.shortcuts import render
 from home.models import About, Setting
 from movies.models import Movie, MovieComment
 from categories.models import Category
+from django.apps import apps
 # Create your views here.
 
 def index(request):
+    # print(apps.get_app_config('app_label').path)
     home = Setting.objects.latest('id')
     slide_movies = Movie.objects.all().order_by('-id')[:5]
     movies = Movie.objects.all().order_by('-id')[:8]
