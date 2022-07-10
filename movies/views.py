@@ -1,9 +1,9 @@
 from django.shortcuts import render, redirect, get_object_or_404, HttpResponseRedirect
-from apps.movies.models import Movie
-from apps.home.models import Setting
-from apps.categories.models import Category
+from movies.models import Movie
+from home.models import Setting
+from categories.models import Category
 from django.db.models import Q
-from apps.movies.forms import MovieCreateForm, MovieUpdateForm
+from movies.forms import MovieCreateForm, MovieUpdateForm
 
 # Create your views here.
 def movie_detail(request, id):
