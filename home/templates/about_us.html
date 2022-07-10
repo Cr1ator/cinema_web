@@ -1,0 +1,41 @@
+{% extends 'homepage.html' %}
+{% load static %}
+{% block content %}
+{% include 'include/header.html' %}
+
+
+<div class="hero common-hero">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="hero-ct">
+					<h1> {{ home.title }} </h1>
+					<ul class="breadcumb">
+						<li>О нас </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- celebrity grid v1 section-->
+<div class="page-single">
+	<div class="container">
+		<div class="row ipad-width2">
+				
+				<div class="celebrity-items">
+					<div class="ceb-item">
+						<a href="celebritysingle.html"><img src="{{ about.image_about.url }}" alt="" ></a>
+						<div class="ceb-infor">
+							<h1><a href="celebritylist.html">{{ about.description }}</a></h1>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+	</div>
+</div>
+<!--end of celebrity grid v1 section-->
+ 
+{% include 'include/footer.html' %}	
+{% endblock %}

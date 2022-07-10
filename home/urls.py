@@ -1,5 +1,5 @@
 from django.urls import path 
-from apps.home.views import index, about, avtor,contakt
+from home.views import index, about, avtor,contakt
 
 
 
