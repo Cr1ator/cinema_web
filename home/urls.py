@@ -2,7 +2,8 @@ from django.urls import path
 from home.views import index, about, avtor,contakt
 from django.conf.urls.static import static
 from django.conf import settings
-
+from django.views.static import serve
+from django.conf.urls import url
 
 app_name = "home"
 
