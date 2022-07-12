@@ -33,15 +33,15 @@
 							</a>
 						</li>
 						<li class="dropdown first">
-							<a href="{% url 'about' %}">
+							<a href="{% url 'home:about' %}">
 							О нас 
 							</a>
 						</li>
 						<li><a href="#">Связаться с нами</a></li>
 					</ul> 
 					<ul class="nav navbar-nav flex-child-menu menu-right">  
-						<li><a href="{% url 'user_login' %}">Логин</a></li>
-						<li><a href="{% url 'register' %}">Зарегистрироваться</a></li>
+						<li><a href="{% url 'users:user_login' %}">Логин</a></li>
+						<li><a href="{% url 'users:register' %}">Зарегистрироваться</a></li>
 					</ul>
 				</div>
 			<!-- /.navbar-collapse -->

@@ -1,0 +1,57 @@
+{% extends 'home/homepage.html' %}
+{% load static %}
+{% block content %}
+{% include 'home/include/header.html' %}
+
+<div class="hero user-hero">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="hero-ct">
+					<h1>Edward kennedy’s profile</h1>
+					<ul class="breadcumb">
+						<li class="active"><a href="#">Home</a></li>
+						<li> <span class="ion-ios-arrow-right"></span>Profile</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<main class="main__content_wrapper">
+ 
+
+    <!-- Start login section  -->
+    <div class="login__section section--padding">
+        <div class="container">
+          
+                <div class="login__section--inner">
+                    <div class="row row-cols-md-2 row-cols-1"> 
+                        <div class="col">
+                            <div class="account__login register">
+                                <div class="account__login--header mb-25">
+                                    <h3 class="account__login--header__title mb-10">Create an Account</h3>
+                                    <p class="account__login--header__desc">Register here if you are a new customer</p>
+                                </div>
+                                <form action="." method="post">
+                                    {{ form.as_p }}
+                                    {% csrf_token %}
+                                    <p><input type="submit" value="Log-in"></p>
+                                </form>
+                                <h3 class="account__login--header__title mb-10">Войти через: </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           
+        </div>     
+    </div>
+    <!-- End login section  -->
+
+ 
+
+</main>
+ 
+
+{% endblock %}
