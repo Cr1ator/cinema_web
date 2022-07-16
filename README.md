@@ -6,7 +6,7 @@ To implement the project, technologies such as Django, PostgreSQL and Docker wer
 
 ## Screenshots
 
-**Начальная страница**
+**Start page**
 
 ![1](https://i.imgur.com/HWFeWth.png)
 
