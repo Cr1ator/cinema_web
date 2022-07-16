@@ -1,0 +1,12 @@
+
+# Azmovl Cinema
+
+To implement the project, technologies such as Django, PostgreSQL and Docker were used
+
+
+## Screenshots
+
+**Начальная страница**
+
+![1](https://i.imgur.com/HWFeWth.png)
+
